@@ -19,7 +19,7 @@ $(document).ready(function() {
     console.log('a');
     $("#block_cookie").fadeOut(500, function() {
       console.log('b');
-      $(this).css({ left: '-570px', display: none });
+      $(this).css({ left: '-670px', display: none });
     });
   });
 });
