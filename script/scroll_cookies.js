@@ -4,7 +4,7 @@ $(document).ready(function() {
   function showBlockCookie() {
     if (animacionEnMarcha) return;
     animacionEnMarcha = true;
-    $("#block_cookie").css({ left: '-570px', opacity: '0' }).animate({ left: '0', opacity: '1'}, 1000);
+    $("#block_cookie").css({ left: '-670px', opacity: '0' }).animate({ left: '0', opacity: '1'}, 1000);
   }
   
   // Mostrar el bloque cookie al hacer scroll
