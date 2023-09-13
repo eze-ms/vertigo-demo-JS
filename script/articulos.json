@@ -1,0 +1,193 @@
+{
+  "articulosRunning": [
+    {
+      "id": 1,
+      "marca": "Nike",
+      "descripcion": "Camiseta running Nike Zoom",
+      "precio": 59.99,
+      "color": "negro",
+      "genero": "Masculino",
+      "imagen": "img/running/camisetas/hombre/cam-001.avif"
+    },
+    {
+      "id": 2,
+      "marca": "Le Coq Sportif",
+      "descripcion": "Zapatillas de running DPV",
+      "precio": 129.99,
+      "color": "azul",
+      "genero": "Unisex",
+      "imagen":"img/running/zapatillas/hombre/zpt-001.avif"
+    },
+    {
+      "id": 3,
+      "marca": "Puma",
+      "descripcion": "Camiseta de running Fresh Foam",
+      "precio": 89.99,
+      "color": "amarillo",
+      "genero": "Masculino",
+      "imagen":"img/running/camisetas/hombre/cam-002.avif"
+    },
+    {
+      "id": 4,
+      "marca": "Asics",
+      "descripcion": "Zapatillas de running Gel-Kayano 28",
+      "precio": 159.99,
+      "color": "amarillo",
+      "genero": "Femenino",
+      "imagen":"img/running/zapatillas/mujer/wmn-002.avif"
+    },
+    {
+      "id": 5,
+      "marca": "Adidas",
+      "descripcion": "Camiseta de running ADD basics",
+      "precio": 39.99,
+      "color": "negro",
+      "genero": "Unisex",
+      "imagen":"img/running/camisetas/hombre/cam-003.avif"
+    },
+    {
+      "id": 6,
+      "marca": "New Balance",
+      "descripcion": "Zapatillas de running Ride 14",
+      "precio": 119.99,
+      "color": "gris",
+      "genero": "Femenino",
+      "imagen":"img/running/zapatillas/mujer/wmn-018.avif"
+    },
+    {
+      "id": 7,
+      "marca": "Salomon",
+      "descripcion": "Zapatillas de running Speed 600",
+      "precio": 109.99,
+      "color": "negro",
+      "genero": "Masculino",
+      "imagen":"img/running/zapatillas/hombre/zpt-005.avif"
+    },
+    {
+      "id": 8,
+      "marca": "Reebok",
+      "descripcion": "Camiseta Floatride Energy",
+      "precio": 79.99,
+      "color": "negro",
+      "genero": "Hombre",
+      "imagen":"img/running/camisetas/hombre/cam-004.avif"
+    },
+    {
+      "id": 9,
+      "marca": "Rebook",
+      "descripcion": "Camiseta Floatride Energy 3.0",
+      "precio": 34.99,
+      "color": "negro",
+      "genero": "Unisex",
+      "imagen":"img/running/camisetas/hombre/cam-005.avif"
+    },
+    {
+      "id": 10,
+      "marca": "New Balance",
+      "descripcion": "Zapatillas de running HOVR",
+      "precio": 159.99,
+      "color": "gris",
+      "genero": "Masculino",
+      "imagen":"img/running/zapatillas/hombre/zpt-006.avif"
+    },
+    {
+        "id": 11,
+        "marca": "New Balance",
+        "descripcion": "Camiseta de running BAGH 2",
+        "precio": 69.99,
+        "color": "azul",
+        "genero": "Masculino",
+        "imagen":"img/running/camisetas/hombre/cam-007.avif"
+      },
+      {
+        "id": 12,
+        "marca": "Asics",
+        "descripcion": "Zapatillas de running Machina ",
+        "precio": 159.99,
+        "color": "amarillo",
+        "genero": "Masculino",
+        "imagen":"img/running/zapatillas/hombre/zpt-007.avif"
+      },
+      {
+        "id": 13,
+        "marca": "Adidas",
+        "descripcion": "Zapatillas de running Flour ",
+        "precio": 159.99,
+        "color": "azul",
+        "genero": "Masculino",
+        "imagen":"img/running/zapatillas/hombre/zpt-008.avif"
+      },
+      {
+        "id": 14,
+        "marca": "Salomon",
+        "descripcion": "Camiseta de running Basics 2 ",
+        "precio": 29.99,
+        "color": "blanco",
+        "genero": "Unisex",
+        "imagen":"img/running/zapatillas/hombre/zpt-009.avif"
+      },
+      {
+        "id": 15,
+        "marca": "New Balance",
+        "descripcion": "Zapatillas de running Rottew ",
+        "precio": 79.99,
+        "color": "negro",
+        "genero": "Femenino",
+        "imagen":"img/running/camisetas/hombre/cam-008.avif"
+      },
+      {
+        "id": 16,
+        "marca": "Reebok",
+        "descripcion": "Camiseta de running Raw ",
+        "precio": 79.99,
+        "color": "negro",
+        "genero": "Masculino",
+        "imagen":"img/running/zapatillas/hombre/zpt-009.avif"
+      },
+      {
+        "id": 17,
+        "marca": "Reebok",
+        "descripcion": "Camiseta de running Raw2 ",
+        "precio": 99.99,
+        "color": "negro",
+        "genero": "Masculino",
+        "imagen":"img/running/camisetas/hombre/cam-010.avif"
+      },
+      {
+        "id": 18,
+        "marca": "Asics",
+        "descripcion": "Zapatillas de running Blue ",
+        "precio": 99.99,
+        "color": "azul",
+        "genero": "Femenino",
+        "imagen":"img/running/zapatillas/hombre/zpt-010.avif"
+      },
+      {
+        "id": 19,
+        "marca": "New Balance",
+        "descripcion": "Zapatillas de running YLLW ",
+        "precio": 159.99,
+        "color": "amarillo",
+        "genero": "Masculino",
+        "imagen":"img/running/zapatillas/hombre/zpt-010.avif"
+      },
+      {
+        "id": 20,
+        "marca": "Adidas",
+        "descripcion": "Csmiseta de running REM ",
+        "precio": 59.99,
+        "color": "negro",
+        "genero": "Unisex",
+        "imagen":"img/running/camisetas/hombre/cam-011.avif"
+      },
+      {
+        "id": 21,
+        "marca": "New Balance",
+        "descripcion": "Camiseta NB ",
+        "precio": 69.99,
+        "color": "azul",
+        "genero": "Masculino",
+        "imagen":"img/running/camisetas/hombre/cam-012.avif"
+      }
+  ]
+}

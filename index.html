@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertigo website</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style_all_running.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- <script type="text/javascript" src="script/indice_running.js"></script> -->
+
+    
+</head>
+<body>
+    
+    <header>
+        <div id="info">
+            <div class="wrapper">
+                <div id="container_info">
+                    <div class="info_left">
+                        <div class="need_help">
+                            <span class="help"><a href="#">¿Necesitas ayuda?</a></span>
+                        </div>
+                        <div class="selector_country">
+                            <span class="country" title="Preferencia de region o idioma"><a href="#">ES (€)</a></span>
+                        </div>
+                    </div>
+                    <div class="info_right">
+                        <div class="my_account">
+                            <a href="#" title="Iniciar sesión / Registrarse" aria-label="Iniciar sesion / Registrarse">Iniciar sersión / Registrarse</a>
+                            <div class="my_account_component">
+                                <form id= "register" method="post" action="contacto.php" onsubmit="validar()">
+                                    <div class="title_form">Conéctate para beneficiarte de ofertas especiales y ventajas exclusivas</div>
+                                    <div class="box_mail">
+                                        <label for="mail" class="name"><span class="red"></span>CORREO ELECTRÓNICO</label>
+                                        <input type="text" id="mail" name="mail" class="bordermail" onblur="correo(this, '#error01A')">
+                                        <div id="error01A"></div>
+                                    </div>
+                                    <div class="box_password">
+                                        <label for="password" class="name"><span class="red"></span>CONTRASEÑA</label>
+                                        <input type="text" id="password" name="password" class="bordermail" onblur="window.password(this, '#error02A')">
+                                        <div id="error02A"></div>
+                                    </div>
+                                    <div class="remember"><a href="#">¿HAS OLVIDADO LA CONTRASEÑA?</a></div>
+                                    <div class="boton_inicio_sesion">
+                                        <button class="login">Iniciar sesión</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--END INFO -->
+
+        <div id="menu">
+            <div class="wrapper">
+                <div id="container_header" class="sticky">
+                    <div class="logo">
+                        <a href="pf.html"><span class="title_logo">VERTIGO</span></a>
+                    </div>
+                    <div class="box_nav_icons">
+                        <div class="box_search">
+                            <form name="search">
+                                <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                            </form>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <nav>
+                            <ul class="nav_items">
+                                <li class="nav_item"><a href="#">Ciclismo</a>
+                                    <div class="container_box">
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="all_bicicletas.html">Bicicletas</a></li>
+                                            <li class="bk"><a href="#">MTB</a></li>
+                                            <li class="bk"><a href="#">Carretera</a></li>
+                                            <li class="bk"><a href="#">Urbanas</a></li>
+                                            <li class="bk"><a href="#">Eléctricas</a></li>
+                                            <li class="bk"><a href="#">Infantiles</a></li>
+                                            <li class="bk"><a href="#">Gravel</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="all_shoes.html">Equipación</a></li>
+                                            <li class="bk"><a href="#">Cascos</a></li>
+                                            <li class="bk"><a href="#">Maillots</a></li>
+                                            <li class="bk"><a href="#">Caquetas</a></li>
+                                            <li class="bk"><a href="#">Guantes</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Protecciones</a></li>
+                                            <li class="bk"><a href="#">Cubrezapatillas</a></li>
+                                            <li class="bk"><a href="#">Complementos</a></li>
+                                            <li class="bk"><a href="#">Manguitos</a></li>
+                                            <li class="bk"><a href="#">Perneras</a></li>
+                                            <li class="bk"><a href="#">Conjuntos</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="all_accesorios.html">Accesorios ciclismo</a></li>
+                                            <li class="bk"><a href="#">Mochilas</a></li>
+                                            <li class="bk"><a href="#">Portabidones</a></li>
+                                            <li class="bk"><a href="#">Bidones</a></li>
+                                            <li class="bk"><a href="#">Lubricantes</a></li>
+                                            <li class="bk"><a href="#">Hinchadores</a></li>
+                                            <li class="bk"><a href="#">Cremas y gel</a></li>
+                                            <li class="bk"><a href="#">Sillines</a></li>
+                                            <li class="bk"><a href="#">Cadenas</a></li>
+                                            <li class="bk"><a href="#">Eléctricas</a></li>
+                                            <li class="bk"><a href="#">Bielas</a></li>
+                                            <li class="bk"><a href="#">Platos</a></li>
+                                            <li class="bk"><a href="#">Ruedas</a></li>
+                                            <li class="bk"><a href="#">Horquillas</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Electrónica ciclismo</a></li>
+                                            <li class="bk"><a href="#">GPS</a></li>
+                                            <li class="bk"><a href="#">Accesorios GPS</a></li>
+                                            <li class="bk"><a href="#">Sensores</a></li>
+                                            <li class="bk"><a href="#">Cámaras deportivas</a></li>
+                                            <li class="bk"><a href="#">Cremas y gel</a></li>
+                                            <li class="bk"><a href="#">Remolques</a></li>
+                                            <li class="bk"><a href="#">Luces</a></li>
+                                        </ul>
+                                        <div class="column_image">
+                                            <img src="img/ciclismo/column_image.avif" alt="image_bike"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="nav_item"><a href="#">Running</a>
+                                    <div class="container_box">
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="all running.html">Equipación hombre</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Mallas y pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Chaquetas</a></li>
+                                            <li class="bk"><a href="#">Chalecos</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Ropa de comprensión</a></li>
+                                            <li class="bk"><a href="#">Medias de comprensión</a></li>
+                                            <li class="bk"><a href="#">Ropa interior térmica</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Guantes</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Equipación mujer</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Mallas y pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Tops y sujetadores</a></li>
+                                            <li class="bk"><a href="#">Ropa interior</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Ropa de comprensión</a></li>
+                                            <li class="bk"><a href="#">Headwear</a></li>
+                                            <li class="bk"><a href="#">Ropa interior térmica</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Chándales</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Niños</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Mallas y pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Chaquetas</a></li>
+                                            <li class="bk"><a href="#">Chalecos</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                        
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Accesorios running</a></li>
+                                            <li class="bk"><a href="#">Hidratación</a></li>
+                                            <li class="bk"><a href="#">Iluminación</a></li>
+                                            <li class="bk"><a href="#">Mochilas y bolsas</a></li>
+                                            <li class="bk"><a href="#">Bastones</a></li>
+                                            <li class="bk"><a href="#">Riñoneras</a></li>
+                                            <li class="bk"><a href="#">Portadorsales</a></li>
+                                            <li class="bk"><a href="#">Cordones</a></li>
+                                            <li class="bk"><a href="#">Polainas</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Complementos</a></li>
+                                        </ul>
+                                        
+                                        <div class="column_image">
+                                            <img src="img/running/home_running.avif" alt="image_running"/>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav_item"><a href="#">Montaña</a>
+                                    <div class="container_box">
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Calzado</a></li>
+                                            <li class="bk"><a href="#">Trekking</a></li>
+                                            <li class="bk"><a href="#">Alpinismo</a></li>
+                                            <li class="bk"><a href="#">Escalada</a></li>
+                                            <li class="bk"><a href="#">Barranquismo</a></li>
+                                            <li class="bk"><a href="#">Esquí</a></li>
+                                            <li class="bk"><a href="#">Vía ferrata</a></li>
+
+                                        </ul>
+                                    
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Hombre</a></li>
+                                            <li class="bk"><a href="#">Pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Chaquetas</a></li>
+                                            <li class="bk"><a href="#">Chalecos</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Forros polares</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Trajes</a></li>
+                                            <li class="bk"><a href="#">Guantes</a></li>
+                                            </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Mujer</a></li>
+                                            <li class="bk"><a href="#">Pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Chaquetas</a></li>
+                                            <li class="bk"><a href="#">Chalecos</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Forros polares</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Ropa interior</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Trajes</a></li>
+                                            <li class="bk"><a href="#">Guantes</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Material montaña</a></li>
+                                            <li class="bk"><a href="#">Hidratación</a></li>
+                                            <li class="bk"><a href="#">Iluminación</a></li>
+                                            <li class="bk"><a href="#">Mochilas y bolsas</a></li>
+                                            <li class="bk"><a href="#">Bastones</a></li>
+                                            <li class="bk"><a href="#">Riñoneras</a></li>
+                                            <li class="bk"><a href="#">Portadorsales</a></li>
+                                            <li class="bk"><a href="#">Cordones</a></li>
+                                            <li class="bk"><a href="#">Polainas</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Complementos</a></li>
+                                        </ul>
+                                        <div class="column_image">
+                                            <img src="img/montaña/mountain.avif" alt="image_montana"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="nav_item"><a href="#">Natación</a>
+                                    <div class="container_box">
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Equipación hombre</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Mallas y pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Chaquetas</a></li>
+                                            <li class="bk"><a href="#">Chalecos</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Ropa de comprensión</a></li>
+                                            <li class="bk"><a href="#">Medias de comprensión</a></li>
+                                            <li class="bk"><a href="#">Ropa interior térmica</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Guantes</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Equipación mujer</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Mallas y pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Chaquetas</a></li>
+                                            <li class="bk"><a href="#">Chalecos</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Ropa de comprensión</a></li>
+                                            <li class="bk"><a href="#">Medias de comprensión</a></li>
+                                            <li class="bk"><a href="#">Ropa interior térmica</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Guantes</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Niños</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Mallas y pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Chaquetas</a></li>
+                                            <li class="bk"><a href="#">Chalecos</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                        
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Accesorios natación</a></li>
+                                            <li class="bk"><a href="#">Hidratación</a></li>
+                                            <li class="bk"><a href="#">Iluminación</a></li>
+                                            <li class="bk"><a href="#">Mochilas y bolsas</a></li>
+                                            <li class="bk"><a href="#">Bastones</a></li>
+                                            <li class="bk"><a href="#">Riñoneras</a></li>
+                                            <li class="bk"><a href="#">Portadorsales</a></li>
+                                            <li class="bk"><a href="#">Cordones</a></li>
+                                            <li class="bk"><a href="#">Polainas</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Complementos</a></li>
+                                        </ul>
+                                        <div class="column_image">
+                                            <img src="img/natacion/natacion.avif" alt="image_natacion"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav_item"><a href="#">Triatlón</a>
+                                    <div class="container_box">
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Natación</a></li>
+                                            <li class="bk"><a href="#">Neoprenos</a></li>
+                                            <li class="bk"><a href="#">Bañadores</a></li>
+                                            <li class="bk"><a href="#">Gagas de natación</a></li>
+                                            <li class="bk"><a href="#">Boyas</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Ciclismo</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Cascos</a></li>
+                                            <li class="bk"><a href="#">Bicicletas</a></li>
+                                            <li class="bk"><a href="#">Manillares</a></li>
+                                            <li class="bk"><a href="#">Ruedas</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Sillines</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Running</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Ropa</a></li>
+                                            <li class="bk"><a href="#">Cordones</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Equipación</a></li>
+                                            <li class="bk"><a href="#">Tritajes</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Sensores</a></li>
+                                            <li class="bk"><a href="#">Portadorsales</a></li>
+                                            <li class="bk"><a href="#">Portachips</a></li>
+                                            <li class="bk"><a href="#">Textil</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Accesorios triatlon</a></li>
+                                            <li class="bk"><a href="#">Mochilas y bolsas</a></li>
+                                            <li class="bk"><a href="#">Cuentakilómetros</a></li>
+                                            <li class="bk"><a href="#">Smartwatches y GPS</a></li>
+                                            <li class="bk"><a href="#">Sensores de frecuencia cardiaca</a></li>
+                                            <li class="bk"><a href="#">Cremas y gel</a></li>
+                                        </ul>
+                                        <div class="column_image">
+                                            <img src="img/triatlon/triatlon.avif" alt="image_triatlon"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav_item"><a href="#">Fitness</a>
+                                    <div class="container_box">
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Equipación hombre</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Mallas y pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Chaquetas</a></li>
+                                            <li class="bk"><a href="#">Chalecos</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Ropa de comprensión</a></li>
+                                            <li class="bk"><a href="#">Medias de comprensión</a></li>
+                                            <li class="bk"><a href="#">Ropa interior térmica</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Guantes</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Equipación mujer</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Mallas y pantalones</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Chaquetas</a></li>
+                                            <li class="bk"><a href="#">Tops y sujetadores</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                            <li class="bk"><a href="#">Ropa de comprensión</a></li>
+                                            <li class="bk"><a href="#">Medias de comprensión</a></li>
+                                            <li class="bk"><a href="#">Ropa interior térmica</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Guantes</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Cardio</a></li>
+                                            <li class="bk"><a href="#">Cintas de correr</a></li>
+                                            <li class="bk"><a href="#">Bicicletas estátitcas</a></li>
+                                            <li class="bk"><a href="#">Bicicletas indoor</a></li>
+                                            <li class="bk"><a href="#">Bicicletas elípticas</a></li>
+                                            <li class="bk"><a href="#">Bicicletas reclinadas</a></li>
+                                            <li class="bk"><a href="#">Rodillos</a></li>
+                                            <li class="bk"><a href="#">Remos</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                        
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Yoga y pilates</a></li>
+                                            <li class="bk"><a href="#">Equipación</a></li>
+                                            <li class="bk"><a href="#">Esterillas</a></li>
+                                            <li class="bk"><a href="#">Estructuras</a></li>
+                                            <li class="bk"><a href="#">Accesorios</a></li>
+                                        </ul>
+                                        
+                                        <div class="column_image">
+                                            <img src="img/fitness/fitness.avif" alt="image_fitness"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav_item"><a href="#">Electrónica</a>
+                                    <div class="container_box">
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Electrónica ciclismo</a></li>
+                                            <li class="bk"><a href="#">GPS</a></li>
+                                            <li class="bk"><a href="#">Accesorios GPS</a></li>
+                                            <li class="bk"><a href="#">Sensores de frecuencia</a></li>
+                                            <li class="bk"><a href="#">Cámaras deportivas</a></li>
+                                            <li class="bk"><a href="#">Básculas digitales</a></li>
+                                            <li class="bk"><a href="#">Movilidad</a></li>
+                                            <li class="bk"><a href="#">Masajeadores</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Electrónica running</a></li>
+                                            <li class="bk"><a href="#">Smartwatches</a></li>
+                                            <li class="bk"><a href="#">Accesorios smartwaches</a></li>
+                                            <li class="bk"><a href="#">Sensores de frecuencia</a></li>
+                                            <li class="bk"><a href="#">Auriculares</a></li>
+                                            <li class="bk"><a href="#">Básculas digitales</a></li>
+                                            <li class="bk"><a href="#">Electroestimuladores</a></li>
+                                            <li class="bk"><a href="#">Masajeadores</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Electrónica outdoor</a></li>
+                                            <li class="bk"><a href="#">Smartwatches y GPS</a></li>
+                                            <li class="bk"><a href="#">Accesorios smartwaches y GPS</a></li>
+                                            <li class="bk"><a href="#">Sensores de frecuencia cardiaca</a></li>
+                                            <li class="bk"><a href="#">Cámaras deportivas</a></li>
+                                            <li class="bk"><a href="#">Localizadores</a></li>
+                                            <li class="bk"><a href="#">Walkie Talkies</a></li>
+                                            <li class="bk"><a href="#">Fundas y bolsas</a></li>
+                                            <li class="bk"><a href="#">Cargadores portátiles</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Electrónica fitness</a></li>
+                                            <li class="bk"><a href="#">Pulseras de actividad</a></li>
+                                            <li class="bk"><a href="#">Básculas digitales</a></li>
+                                            <li class="bk"><a href="#">Tensiómetros</a></li>
+                                            <li class="bk"><a href="#">Smartwatches y GPS</a></li>
+                                            <li class="bk"><a href="#">Accesorios smartwaches y GPS</a></li>
+                                            <li class="bk"><a href="#">Sensores de frecuencia cardiaca</a></li>
+                                            <li class="bk"><a href="#">Electroestimuladores</a></li>
+                                        </ul>
+                                        
+                                        <div class="column_image">
+                                            <img src="img/electronica/electronica.avif" alt="image_electronica"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav_item"><a href="#">Lifestyle</a>
+                                    <div class="container_box">
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Calzado hombre</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Botas</a></li>
+                                            <li class="bk"><a href="#">Zuecos</a></li>
+                                            <li class="bk"><a href="#">Sandalias</a></li>
+                                            <li class="bk"><a href="#">Chanclas</a></li>
+                                            <li class="ti-column-in"><a href="#">Calzado infantil</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Botas</a></li>
+                                            <li class="bk"><a href="#">Sandalias</a></li>
+                                            <li class="bk"><a href="#">Chanclas</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Calzado mujer</a></li>
+                                            <li class="bk"><a href="#">Zapatillas</a></li>
+                                            <li class="bk"><a href="#">Botas</a></li>
+                                            <li class="bk"><a href="#">Zuecos</a></li>
+                                            <li class="bk"><a href="#">Sandalias</a></li>
+                                            <li class="bk"><a href="#">Chanclas</a></li>
+                                            <li class="ti-column-in"><a href="#">Accesorios</a></li>
+                                            <li class="bk"><a href="#">Gafas</a></li>
+                                            <li class="bk"><a href="#">Mochilas</a></li>
+                                            <li class="bk"><a href="#">Relojes</a></li>
+                                            <li class="bk"><a href="#">Pulseras</a></li>
+
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Ropa hombre</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Camisas</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Polos</a></li>
+                                            <li class="bk"><a href="#">Bermudas</a></li>
+                                            <li class="bk"><a href="#">Pantalones</a></li>
+                                            <li class="bk"><a href="#">Bañadores</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Ropa mujer</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Camisas</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Polos</a></li>
+                                            <li class="bk"><a href="#">Bestidos</a></li>
+                                            <li class="bk"><a href="#">Pantalones</a></li>
+                                            <li class="bk"><a href="#">Bañadores</a></li>
+                                            <li class="bk"><a href="#">Medias</a></li>
+                                            <li class="bk"><a href="#">Ropa interior</a></li>
+                                        </ul>
+                                        <ul class="r-column">
+                                            <li class="ti-column"><a href="#">Ropa infantil</a></li>
+                                            <li class="bk"><a href="#">Camisetas</a></li>
+                                            <li class="bk"><a href="#">Camisas</a></li>
+                                            <li class="bk"><a href="#">Sudaderas</a></li>
+                                            <li class="bk"><a href="#">Polos</a></li>
+                                            <li class="bk"><a href="#">Bermudas</a></li>
+                                            <li class="bk"><a href="#">Pantalones</a></li>
+                                            <li class="bk"><a href="#">Bañadores</a></li>
+                                            <li class="bk"><a href="#">Calcetines</a></li>
+                                        </ul>
+                                        
+                                        <div class="column_image">
+                                            <img src="img/lifestyle/lifestyle.avif" alt="image_electronica"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- <li class="nav_item"><a href="#">Ofertas</a>
+                                    <div class="container_box_ofertas">
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </nav>
+                        <div class="container_icons">
+                            <div class="heart">
+                                <a href="#"><img src="img/iconos/favorite_FILL0_wght400_GRAD0_opsz48.svg" alt="bag_shopping"/></a>
+                            </div>
+                            
+                            <div class="my_account_component_2">
+                                <form id= "register" method="post" action="contacto.php" onsubmit="validar()">
+                                    <div class="plus">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    <div class="title_form">Inicia sesión</div>
+                                    <div class="box_mail">
+                                        <label for="mail" class="name"><span class="red"></span>CORREO ELECTRÓNICO</label>
+                                        <input type="text" id="mail" name="mail" class="bordermail" onblur="correo(this, '#error01B')">
+                                        <div id="error01B"></div>
+                                    </div>
+                                    <div class="box_password">
+                                        <label for="password" class="name"><span class="red"></span>CONTRASEÑA</label>
+                                        <input type="text" id="password" name="password" class="bordermail" onblur="window.password(this, '#error02B')">
+                                        <div id="error02B"></div>
+                                    </div>
+                                    <div class="remember_2"><a href="#">¿HAS OLVIDADO LA CONTRASEÑA?</a></div>
+                                    <div class="boton_inicio_sesion">
+                                        <button class="login">Iniciar sesión</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="bag">
+                                <a href="#"><img src="img/iconos/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" alt="bag_shopping"/></a>
+                                <span class="cantidad">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--END MENU -->
+    </header>
+
+
+    <main>
+        
+        <div id="block_news">
+            <div class="wrapper">
+                <section class="block_four">
+                    <div class="categorias">
+                        <h2 class="titulo_categorias">TODO RUNNING</h2>
+                        <div class="container_layout">
+                            <div id="layout_left">
+                                <div class="block_select">
+                                    <label class="collection" for="ordenar">Ordenar por</label>
+                                    <select class="control" name="selecciona_categoria" id="ordenar">
+                                    <option value="">Todas</option>
+                                    <option value="MTB">Precio más alto</option>
+                                    <option value="CAR">Más vendidas</option>
+                                    <option value="URB">Precio más bajo</option>
+                                    <option value="ELC">Oferta</option>
+                                    <option value="INF">Novedad</option>
+                                    <option value="GRV">Infantil</option>
+                                    </select>
+                                </div>
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Marcas
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+
+                                        <div class="accordion-content">
+                                            <ul class="items_marcas">
+                                                <li data-marca="Nike">
+                                                    <input type="checkbox" id="priv1" name="marca" value="ASICS" onchange="filtro(this.value)">
+                                                    <label for="priv1">ASICS</label>
+                                                </li>
+                                                <li data-marca="Puma">
+                                                    <input type="checkbox" id="priv2" name="marca" value="New Balance" onchange="filtro(this.value)">
+                                                    <label for="priv2">New Balance</label>
+                                                </li>
+                                                <li data-marca="Asics">
+                                                    <input type="checkbox" id="priv3" name="marca" value="Adidas" onchange="filtro(this.value)">
+                                                    <label for="priv3">Adidas</label>
+                                                </li>
+                                                <li data-marca="Adidas">
+                                                    <input type="checkbox" id="priv4" name="marca" value="Salomon" onchange="filtro(this.value)">
+                                                    <label for="priv4">Salomon</label>
+                                                </li>
+                                                <li data-marca="New Balance">
+                                                    <input type="checkbox" id="priv5" name="marca" value="Saucony" onchange="filtro(this.value)">
+                                                    <label for="priv5">Saucony</label>
+                                                </li>
+                                                <li data-marca="Salomon" >
+                                                    <input type="checkbox" id="priv6" name="marca" value="Joma" onchange="filtro(this.value)">
+                                                    <label for="priv6">Joma</label>
+                                                </li>
+                                                <li data-marca="Reebok">
+                                                    <input type="checkbox" id="priv7" name="marca" value="Le Coq Sportif" onchange="filtro(this.value)">
+                                                    <label for="priv7">Le Coq Sportif</label>
+                                                </li>
+                                                <li data-marca="Reebok">
+                                                    <input type="checkbox" id="priv8" name="marca" value="Munich" onchange="filtro(this.value)">
+                                                    <label for="priv8">Munich</label>
+                                                </li>
+                                                <li data-marca="Adidas">
+                                                    <input type="checkbox" id="priv9" name="marca" value="Puma" onchange="filtro(this.value)">
+                                                    <label for="priv9">Puma</label>
+                                                </li>
+                                                <li data-marca="New Balance">
+                                                    <input type="checkbox" id="priv10" name="marca" value="Reebok" onchange="filtro(this.value)">
+                                                    <label for="priv10">Reebok</label>
+                                                </li>
+                                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Precios
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <ul class="items_precios">
+                                                <li><span>€</span>5O- <span> €</span>1OO</li>
+                                                <li><span>€</span>1OO- <span> €</span>15O</li>
+                                                <li><span>€</span>15O- <span> €</span>2OO</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Color
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <ul class="items_colores">
+                                                <li><button data-color="gris" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="negro" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="rojo" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="azul" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="verde" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="blanco" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="rosa" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="amarillo" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="naranja" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="purpura" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="marron" class="palette-button" onclick="prueba(this)"></button></li>
+                                                <li><button data-color="celeste" class="palette-button" onclick="prueba(this)"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">Talla
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <ul class="items_talla">
+                                                <li><button class="palette-size-button">36-38</button></li>
+                                                <li><button class="palette-size-button">38-4O</button></li>
+                                                <li><button class="palette-size-button">4O-42</button></li>
+                                                <li><button class="palette-size-button">42-44</button></li>
+                                                <li><button class="palette-size-button">44-46</button></li>
+                                                <li><button class="palette-size-button">+46</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="genero">
+                                    <p>Genero</p>
+                                    <ul class="sexo">
+                                        <li class="man">Hombre</li>
+                                        <li class="woman">Mujer</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="layout_rigth">
+                                <div id="container_indice">
+                                    <ul class="box_indice">
+                                        <li data-page-url="web/grupo_running_1.html">1</li>
+                                        <li data-page-url="web/grupo_running_2.html">2</li>
+                                        <li data-page-url="web/grupo_running_3.html">3</li>
+                                        <li data-page-url="web/grupo_running_4.html">4</li>
+                                    </ul>
+                                </div>
+
+                                <div id="container_accesorios">
+                                    <!-- AQUÍ VAN TODOS LOS ARTICULOS CARGADOS -->
+                                </div>
+                                <div id="chart-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>    <!-- END NOVEDADES -->
+        
+        <div id="block_envios">
+            <div class="wrapper">
+                <section class="block_eight">
+                    <div class="categorias_newsletter">
+                        <div class="multi_letter">
+                            
+                            <h3 class="multi_columna1_tittle_letter">VERTIGO NEWSLETTER</h3>
+                            <p class="text_newsletter">Inscríbete para descubrir antes que nadie los nuevos productos e historias VERTIGO.</p>
+                            <div class="box_mail_newletter">
+                                <input type="text" id="mail" name="mail" class="bordermail_newsletter">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div> <!-- END NEWSLETTER -->
+
+        <div id="block_envios_2">
+            <div class="wrapper">
+                <footer class="block_six">
+                    <div class="container_footer">
+                        <div class="categorias_envios">
+                            <div class="multi_columna1">
+                                <div class="symbols-outlined">
+                                    <img src="img/iconos/chat_FILL0_wght400_GRAD0_opsz48.svg" alt="symbol_send"/>
+                                </div>
+                                <h3 class="multi_columna1_tittle">CONTACTA CON NOSOTROS</h3>
+                                <p>Si tienes alguna pregunta sobre nuestros equipos, el proceso de compra o cualquier otra cosa, ponte en contacto con nosotros.</p>
+                                <div class="multi-column__button">
+                                    <a href="#" class="link--underline">Contacto</a>
+                                </div>
+                            </div>
+                            <div class="multi_columna2">
+                                <div class="symbols-outlined">
+                                    <img src="img/iconos/deployed_code_FILL0_wght400_GRAD0_opsz48.svg" alt="symbol_box"/>
+                                </div>
+                                <h3 class="multi_columna1_tittle">ENVÍO GRATUITO</h3>
+                                <p>Envío gratuito a España a partir de 120€ y a cualquier parte de Europa a partir de 180€.</p>
+                                <div class="multi-column__button">
+                                    <a href="#" class="link--underline">Envío</a>
+                                </div>
+                            </div>
+                            <div class="multi_columna3">
+                                <div class="symbols-outlined">
+                                    <img src="img/iconos/support_agent_FILL0_wght400_GRAD0_opsz48.svg" alt="symbol_call"/>
+                                </div>
+                                <h3 class="multi_columna1_tittle">ATENCIÓN AL CLIENTE</h3>
+                                <a href="#"><p>Ayuda</p></a>
+                                <a href="#"><p>Seguimiento pedidos</p></a>
+                                <a href="#"><p>Cambio de talla</p></a>
+                                <a href="#"><p>Facturas</p></a>
+                                <div class="multi-column__button">
+                                    <a href="#" class="link--underline">Contacto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_2">
+                            <div class="envios">
+                                <p>Envíos</p>
+                                <div class="rrss">
+                                    <div class="border_fedex">
+                                        <a href="#"><i class="fa-brands fa-fedex"></i></a>
+                                    </div>
+                                    <div class="border_ups">
+                                        <a href="#"> <i class="fa-brands fa-ups"></i></a>
+                                    </div>
+                                    <div class="border_dhl">
+                                        <a href="#"><i class="fa-brands fa-dhl"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="send">
+                                <p>Síguenos en</p>
+                                <div class="rrss">
+                                    <a href="#"><div class="border_ig"><i class="fa-brands fa-instagram"></i></div></a>
+                                    <a href="#"><div class="border_fb"><i class="fa-brands fa-facebook-f"></i></div></a>
+                                </div>
+                            </div>
+                            <div class="pago">
+                                <p>Pago seguro</p>
+                                <div class="rrss">
+                                    <div class="border_visa">
+                                        <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+                                    </div>
+                                    <div class="border_mastercard">
+                                        <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+                                    </div>
+                                    <div class="border_amex">
+                                        <a href="#"><i class="fa-brands fa-cc-amex"></i></a>
+                                    </div>
+                                    <div class="border_paypal">
+                                        <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyrights">
+                        <div class="box_controlador">  
+                            <button class="navigation__button--three">
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </button>
+                        </div>
+                        <div class="coppy">
+                            <span class="copyright">© 2023 Vertigo</span> 
+                        </div>
+                        <div class="legal">
+                            <a href="#"><span class="aviso">Aviso legal</span></a> <span> | </span> <a href="#"><span class="aviso">Política de privacidad</span></a> <span> | </span> <a href="#"><span class="aviso">Cookies</span></a>
+                        </div>
+                    </div>
+                   
+                </footer>
+            </div>
+        </div> <!-- END ENVIOS -->
+    </main>
+    
+    <script type="text/javascript" src="script/form_icon.js"></script>
+    <script type="text/javascript" src="script/accordeon.js"></script>
+    <script type="text/javascript" src="script/function_articulos.js"></script>
+    <script type="text/javascript" src="script/indice_running.js"></script>
+    <script type="text/javascript" src="script/form_icon.js"></script>
+    <script type="text/javascript" src="script/validar_form.js"></script>
+    <script type="text/javascript" src="script/cambioEstilo.js"></script>
+    <script type="text/javascript" src="script/controller.js"></script>
+
+</body>
+</html>
