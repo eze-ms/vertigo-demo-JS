@@ -282,6 +282,7 @@ nav>ul>li>a{
     top: 18px;
     font-size: 1.5rem;
     padding: 0.45rem;
+    transform: rotate(45deg)
 }
 .plus:hover{
     background-color: #edecec;
