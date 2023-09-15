@@ -285,7 +285,6 @@ nav>ul>li>a{
     transform: rotate(45deg)
 }
 .plus:hover{
-    background-color: #edecec;
     padding: 0.45rem;
     border-radius: 8px;
 }
