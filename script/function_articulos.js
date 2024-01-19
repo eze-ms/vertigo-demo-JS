@@ -1,10 +1,39 @@
 var articulos; // Variable global
 
-// ARTICULOS RUNNING //
-$.getJSON('script/articulos.json', function(data) {
-  articulos = data.articulosRunning;
-  generarProductos(articulos, "#container_accesorios");
-});
+
+function cargarRunning() {
+  // ARTICULOS RUNNING //
+  $.getJSON('script/articulos_running.json', function(data) {
+    articulos = data.articulosRunning;
+    generarProductos(articulos, "#container_accesorios");
+  });
+}
+
+// function cargarBicicletas() {
+//   $.getJSON('script/articulos_bicicleta.json', function(data) { 
+//     articulos = data.articulosBicicleta;
+//     generarProductos(articulos, "#container_accesorios");
+//   });
+
+// }
+
+function cargarDatosPagina() {
+  var pagina = window.location.pathname; // Obtener la ruta de la página actual
+
+  switch (pagina) {
+    case '/running.html':
+      console.error('Página reconocida');
+      cargarRunning();
+      break;
+    // Agrega más casos según sea necesario para otras páginas
+    default:
+      console.error('Página no reconocida');
+  }
+}
+
+// Llamar a cargarDatosPagina al cargar la página
+document.addEventListener('DOMContentLoaded', cargarDatosPagina);
+
 
 function generarProductos(lista, donde) {
   // lista - array de objetos con la informacion de los productos
@@ -28,6 +57,7 @@ function generarProductos(lista, donde) {
   html += "</ul>";
   document.querySelector(donde).innerHTML = html;
 }
+
 
 // Llamar a la función marcas cuando se seleccionen los checkboxes
 function filtro() {
