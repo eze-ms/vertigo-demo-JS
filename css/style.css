@@ -556,6 +556,7 @@ nav>ul>li>a{
   transform: scale(1.1);
   filter: brightness(70%);
 }
+
 .box_controlador{
     position: relative;
     top: 18px;

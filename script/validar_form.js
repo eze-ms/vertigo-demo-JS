@@ -38,7 +38,6 @@ function password(c, idError) {
     }
 }
 
-
 function validar(event) {
     var mail = document.getElementById("mail");//llamamos y guardamos atributo
     var pwd = document.getElementById("password");//llamamos y guardamos atributo
