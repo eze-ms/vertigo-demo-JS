@@ -72,11 +72,4 @@ function filtro() {
   articulosFiltrados.forEach((articulo) => {
     console.log(articulo.id, articulo.marca, articulo.descripcion, articulo.precio, articulo.color, articulo.genero);
   });
-<<<<<<< HEAD:script/function_articulos.js
 }
-=======
-}
-
-
-
->>>>>>> 2166e71c06e7ff3dfe1477f721a957d5a7465d97:script/function_articulos_running.js
