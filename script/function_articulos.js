@@ -1,3 +1,5 @@
+var articulos;
+
 function cargarRunning() {
   // ARTICULOS RUNNING //
   $.getJSON('script/articulos_running.json', function(data) {
@@ -6,49 +8,23 @@ function cargarRunning() {
   });
 }
 
-<<<<<<< HEAD:script/function_articulos.js
 function cargarBicicletas() {
   $.getJSON('script/articulos_bicicleta.json', function(data) { 
     articulos = data.articulosBicicleta;
     generarProductos(articulos, "#container_accesorios");
+    
+    // Obtener el valor del parámetro 'pagina' de la URL
+    var pagina = obtenerParametroGET('p');
+    
+    // Si no se especifica la página, establecerla en 1 por defecto
+    if (!pagina) {
+        pagina = 1;
+    }
+    console.log(pagina);
+    cargarProductosPorPagina(pagina);
   });
 }
-=======
 
-function cargarRunning() {
-  // ARTICULOS RUNNING //
-  $.getJSON('script/articulos_running.json', function(data) {
-    articulos = data.articulosRunning;
-    generarProductos(articulos, "#container_accesorios");
-  });
-}
-
-// function cargarBicicletas() {
-//   $.getJSON('script/articulos_bicicleta.json', function(data) { 
-//     articulos = data.articulosBicicleta;
-//     generarProductos(articulos, "#container_accesorios");
-//   });
-
-// }
-
-function cargarDatosPagina() {
-  var pagina = window.location.pathname; // Obtener la ruta de la página actual
-
-  switch (pagina) {
-    case '/running.html':
-      console.error('Página reconocida');
-      cargarRunning();
-      break;
-    // Agrega más casos según sea necesario para otras páginas
-    default:
-      console.error('Página no reconocida');
-  }
-}
-
-// Llamar a cargarDatosPagina al cargar la página
-document.addEventListener('DOMContentLoaded', cargarDatosPagina);
-
->>>>>>> bec9a47747c1c51ed03ed1036078e582e09ef52a:script/function_articulos_running.js
 
 function generarProductos(lista, donde) {
   // lista - array de objetos con la informacion de los productos
@@ -72,7 +48,6 @@ function generarProductos(lista, donde) {
   html += "</ul>";
   document.querySelector(donde).innerHTML = html;
 }
-
 
 // Llamar a la función marcas cuando se seleccionen los checkboxes
 function filtro() {
@@ -118,3 +93,6 @@ function filtro() {
     console.log(articulo.id, articulo.marca, articulo.descripcion, articulo.precio, articulo.color, articulo.genero);
   });
 }
+
+
+
