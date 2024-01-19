@@ -1,0 +1,707 @@
+{
+  "articulosBicicleta": [
+    {
+      "id": 1,
+      "marca": "Merida",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/crr-051.avif"
+    },
+    {
+      "id": 2,
+      "marca": "Conor",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "carretera",
+      "imagen": "img/ciclismo/bicicletas/crr-052.avif"
+    },
+    {
+      "id": 3,
+      "marca": "Umit",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "urbanas",
+      "imagen": "img/ciclismo/bicicletas/crr-053.avif"
+    },
+    {
+      "id": 4,
+      "marca": "Argon",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/crr-054.avif"
+    },
+    {
+      "id": 5,
+      "marca": "Cervelo",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/crr-055.avif"
+    },
+    {
+      "id": 6,
+      "marca": "Breezer",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/crr-056.avif"
+    },
+    {
+      "id": 7,
+      "marca": "Ediura",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/crr-057.avif"
+    },
+    {
+      "id": 8,
+      "marca": "Etnies",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "verde",
+      "categoria": "carretera",
+      "imagen": "img/ciclismo/bicicletas/crr-058.avif"
+    },
+    {
+      "id": 9,
+      "marca": "MBN",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "urbanas",
+      "imagen": "img/ciclismo/bicicletas/crr-059.avif"
+    },
+    {
+      "id": 10,
+      "marca": "Kross",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/crr-060.avif"
+    },
+    {
+      "id": 11,
+      "marca": "Merida",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/crr-061.avif"
+    },
+    {
+      "id": 12,
+      "marca": "Conor",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/crr-062.avif"
+    },
+    {
+      "id": 13,
+      "marca": "Umit",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/crr-063.avif"
+    },
+    {
+      "id": 14,
+      "marca": "Argon",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "verde",
+      "categoria": "carretera",
+      "imagen": "img/ciclismo/bicicletas/crr-064.avif"
+    },
+    {
+      "id": 15,
+      "marca": "Cervelo",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "urbanas",
+      "imagen": "img/ciclismo/bicicletas/crr-065.avif"
+    },
+    {
+      "id": 16,
+      "marca": "Breezer",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/crr-066.avif"
+    },
+    {
+      "id": 17,
+      "marca": "Ediura",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/crr-067.avif"
+    },
+    {
+      "id": 18,
+      "marca": "Etnies",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/crr-068.avif"
+    },
+    {
+      "id": 19,
+      "marca": "MBN",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/crr-069.avif"
+    },
+    {
+      "id": 20,
+      "marca": "Kross",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "rojo",
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/crr-070.avif"
+    },
+    {
+      "id": 21,
+      "marca": "Merida",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/elec-071.avif"
+    },
+    {
+      "id": 22,
+      "marca": "Conor",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "verde",
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/elec-072.avif"
+    },
+    {
+      "id": 23,
+      "marca": "Umit",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/elec-073.avif"
+    },
+    {
+      "id": 24,
+      "marca": "Argon",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "rojo",
+      "categoria": "carretera",
+      "imagen": "img/ciclismo/bicicletas/elec-074.avif"
+    },
+    {
+      "id": 25,
+      "marca": "Cervelo",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",
+      "categoria": "urbanas",
+      "imagen": "img/ciclismo/bicicletas/elec-075.avif"
+    },
+    {
+      "id": 26,
+      "marca": "Breezer",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "amarillo",
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/elec-076.avif"
+    },
+    {
+      "id": 27,
+      "marca": "Ediura",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/elec-077.avif"
+    },
+    {
+      "id": 28,
+      "marca": "Etnies",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/elec-078.avif"
+    },
+    {
+      "id": 29,
+      "marca": "MBN",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/elec-079.avif"
+    },
+    {
+      "id": 30,
+      "marca": "Kross",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "rojo",
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/elec-080.avif"
+    },
+    {
+      "id": 31,
+      "marca": "Merida",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/elec-081.avif"
+    },
+    {
+      "id": 32,
+      "marca": "Conor",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "blanco",
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/elec-082.avif"
+    },
+    
+    {
+      "id": 34,
+      "marca": "Argon",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",
+      "categoria": "carretera",
+      "imagen": "img/ciclismo/bicicletas/elec-083.avif"
+    },
+    {
+      "id": 35,
+      "marca": "Cervelo",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "urbanas",
+      "imagen": "img/ciclismo/bicicletas/elec-084.avif"
+    },
+    {
+      "id": 36,
+      "marca": "Breezer",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "blanco",
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/elec-086.avif"
+    },
+    {
+      "id": 37,
+      "marca": "Ediura",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/elec-087.avif"
+    },
+    {
+      "id": 38,
+      "marca": "Etnies",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "blanco",
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/elec-088.avif"
+    },
+    {
+      "id": 39,
+      "marca": "MBN",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/elec-089.avif"
+    },
+    {
+      "id": 40,
+      "marca": "Kross",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "verde",
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/elec-090.avif"
+    },
+    {
+      "id": 41,
+      "marca": "Merida",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/mtb-001.avif"
+    },
+    {
+      "id": 42,
+      "marca": "Conor",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "blanco",
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/mtb-002.avif"
+    },
+    {
+      "id": 43,
+      "marca": "Umit",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "amarillo",
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/mtb-003.avif"
+    },
+    {
+      "id": 44,
+      "marca": "Argon",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "carretera",
+      "imagen": "img/ciclismo/bicicletas/mtb-004.avif"
+    },
+    {
+      "id": 45,
+      "marca": "Cervelo",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",
+      "categoria": "urbanas",
+      "imagen": "img/ciclismo/bicicletas/mtb-005.avif"
+    },
+    {
+      "id": 46,
+      "marca": "Breezer",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "amarillo",
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/mtb-006.avif"
+    },
+    {
+      "id": 47,
+      "marca": "Ediura",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "rojo",
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/mtb-007.avif"
+    },
+    {
+      "id": 48,
+      "marca": "Etnies",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/mtb-008.avif"
+    },
+    {
+      "id": 49,
+      "marca": "MBN",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/mtb-009.avif"
+    },
+    {
+      "id": 50,
+      "marca": "Kross",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": null,
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/mtb-010.avif"
+    },
+    {
+      "id": 51,
+      "marca": "Merida",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/mtb-010.avif"
+    },
+    {
+      "id": 52,
+      "marca": "Conor",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",      
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/mtb-011.avif"
+    },
+    {
+      "id": 53,
+      "marca": "Umit",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/mtb-012.avif"
+    },
+    {
+      "id": 54,
+      "marca": "Argon",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",     
+       "categoria": "carretera",
+      "imagen": "img/ciclismo/bicicletas/mtb-013.avif"
+    },
+    {
+      "id": 55,
+      "marca": "Cervelo",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",     
+       "categoria": "urbanas",
+      "imagen": "img/ciclismo/bicicletas/mtb-014.avif"
+    },
+    {
+      "id": 56,
+      "marca": "Breezer",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "rojo",      
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/mtb-015.avif"
+    },
+    {
+      "id": 57,
+      "marca": "Ediura",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/mtb-016.avif"
+    },
+    {
+      "id": 58,
+      "marca": "Etnies",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",     
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/mtb-017.avif"
+    },
+    {
+      "id": 59,
+      "marca": "MBN",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "marron",      
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/mtb-018.avif"
+    },
+    {
+      "id": 60,
+      "marca": "Kross",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",      
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/mtb-019.avif"
+    },
+    {
+      "id": 61,
+      "marca": "Merida",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "amarillo",      
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/mtb-020.avif"
+    },
+    {
+      "id": 62,
+      "marca": "Conor",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "rojo",      
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/urb-021.avif"
+    },
+    {
+      "id": 63,
+      "marca": "Umit",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "verde",      
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/urb-022.avif"
+    },
+    {
+      "id": 64,
+      "marca": "Argon",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "gris",      
+      "categoria": "carretera",
+      "imagen": "img/ciclismo/bicicletas/urb-023.avif"
+    },
+    {
+      "id": 65,
+      "marca": "Cervelo",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/urb-024.avif"
+    },
+    {
+      "id": 66,
+      "marca": "Breezer",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/urb-025.avif"
+    },
+    {
+      "id": 67,
+      "marca": "Ediura",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "blanco",      
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/urb-026.avif"
+    },
+    {
+      "id": 68,
+      "marca": "Etnies",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "verde",      
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/urb-027.avif"
+    },
+    {
+      "id": 69,
+      "marca": "MBN",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "verde",      
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/urb-028.avif"
+    },
+    {
+      "id": 70,
+      "marca": "Kross",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "blanco",      
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/urb-029.avif"
+    },
+    {
+      "id": 71,
+      "marca": "Merida",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/urb-030.avif"
+    },
+    {
+      "id": 72,
+      "marca": "Conor",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "blanco",      
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/urb-031.avif"
+    },
+    {
+      "id": 73,
+      "marca": "Umit",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/urb-032.avif"
+    },
+    {
+      "id": 74,
+      "marca": "Argon",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",     
+       "categoria": "carretera",
+      "imagen": "img/ciclismo/bicicletas/urb-033.avif"
+    },
+    {
+      "id": 75,
+      "marca": "Cervelo",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "azul",     
+      "categoria": "urbanas",
+      "imagen": "img/ciclismo/bicicletas/urb-034.avif"
+    },
+    {
+      "id": 76,
+      "marca": "Breezer",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": null,      
+      "categoria": "eléctricas",
+      "imagen": "img/ciclismo/bicicletas/urb-035.avif"
+    },
+    {
+      "id": 77,
+      "marca": "Ediura",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "infantiles",
+      "imagen": "img/ciclismo/bicicletas/urb-036.avif"
+    },
+    {
+      "id": 78,
+      "marca": "Etnies",
+      "descripcion": "Marca de la bicicleta",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "gravel",
+      "imagen": "img/ciclismo/bicicletas/urb-037.avif"
+    },
+    {
+      "id": 79,
+      "marca": "MBN",
+      "descripcion": "Descripción",
+      "precio": "24.95€",
+      "color": "negro",      
+      "categoria": "mtb",
+      "imagen": "img/ciclismo/bicicletas/urb-038.avif"
+    }
+  ]
+}

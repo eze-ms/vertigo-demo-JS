@@ -381,7 +381,7 @@ nav>ul>li>a{
 #block_cookie {
     position: fixed;
     bottom: 0;
-    left: -570px;
+    left: -900px;
     width: 100%;
     z-index: 1; /* Ajusta el valor del z-index según sea necesario */
 }

@@ -1,15 +1,25 @@
 var articulos; // Variable global
 
-$.getJSON('script/articulos.json', function(data) {
-  articulos = data.articulosRunning;
-  generarProductos(articulos, "#container_accesorios");
-});
+// ARTICULOS BICICLETA //
+$.getJSON('script/articulos_bicicleta.json', function(data) { 
+    articulos = data.articulosBicicleta;
+    generarProductos(articulos, "#container_accesorios");
+  });
+
+  
 
 function generarProductos(lista, donde) {
   // lista - array de objetos con la informacion de los productos
   // donde - valor del atributo id donde se generará la lista de productos
 
   var html = "<ul class='collection-list_items_accesorios'>";
+
+   // Verificar que lista esté definida y sea un array
+   if (!Array.isArray(lista)) {
+    console.error('La lista no es un array o está indefinida.');
+    return;
+  }
+
   for (var i=0;i<lista.length; i++) {
     var arti = lista[i];
     html += `
@@ -24,6 +34,7 @@ function generarProductos(lista, donde) {
     </li>    
     `;
   }
+  
   html += "</ul>";
   document.querySelector(donde).innerHTML = html;
 }
@@ -72,3 +83,6 @@ function filtro() {
     console.log(articulo.id, articulo.marca, articulo.descripcion, articulo.precio, articulo.color, articulo.genero);
   });
 }
+
+
+
