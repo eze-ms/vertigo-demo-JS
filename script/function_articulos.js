@@ -5,6 +5,7 @@ function cargarRunning() {
   $.getJSON('script/articulos_running.json', function(data) {
     articulos = data.articulosRunning;
     generarProductos(articulos, "#container_accesorios");
+    generarPaginacion();
   });
 }
 
@@ -12,6 +13,7 @@ function cargarBicicletas() {
   $.getJSON('script/articulos_bicicleta.json', function(data) { 
     articulos = data.articulosBicicleta;
     generarProductos(articulos, "#container_accesorios");
+    generarPaginacion();
     
     // Obtener el valor del parámetro 'pagina' de la URL
     var pagina = obtenerParametroGET('p');
@@ -24,7 +26,6 @@ function cargarBicicletas() {
     cargarProductosPorPagina(pagina);
   });
 }
-
 
 function generarProductos(lista, donde) {
   // lista - array de objetos con la informacion de los productos
@@ -93,6 +94,3 @@ function filtro() {
     console.log(articulo.id, articulo.marca, articulo.descripcion, articulo.precio, articulo.color, articulo.genero);
   });
 }
-
-
-
