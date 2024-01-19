@@ -5,7 +5,16 @@ function cargarRunning() {
   $.getJSON('script/articulos_running.json', function(data) {
     articulos = data.articulosRunning;
     generarProductos(articulos, "#container_accesorios");
-    generarPaginacion();
+    // generarPaginacion();
+    // // Obtener el valor del parámetro 'pagina' de la URL
+    // var pagina = obtenerParametroGET('p');
+    
+    // // Si no se especifica la página, establecerla en 1 por defecto
+    // if (!pagina) {
+    //     pagina = 1;
+    // }
+    // console.log(pagina);
+    // cargarProductosPorPagina(pagina);
   });
 }
 

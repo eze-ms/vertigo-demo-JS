@@ -39,7 +39,6 @@ function actualizarClaseActiva(pagina) {
   $('#container_indice li[data-page-url="' + pagina + '"]').addClass('active');
 }
 
-
 function generarPaginacion() {
     var totalPaginas = Math.ceil(articulos.length / PRODUCTOS_POR_PAGINA);
     var ulPaginacion = document.querySelector('.box_indice');
@@ -58,4 +57,4 @@ function generarPaginacion() {
     }
   
     return ulPaginacion;
-  }
+}
