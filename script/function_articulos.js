@@ -1,10 +1,17 @@
-var articulos; // Variable global
+function cargarRunning() {
+  // ARTICULOS RUNNING //
+  $.getJSON('script/articulos_running.json', function(data) {
+    articulos = data.articulosRunning;
+    generarProductos(articulos, "#container_accesorios");
+  });
+}
 
-// ARTICULOS RUNNING //
-$.getJSON('script/articulos.json', function(data) {
-  articulos = data.articulosRunning;
-  generarProductos(articulos, "#container_accesorios");
-});
+function cargarBicicletas() {
+  $.getJSON('script/articulos_bicicleta.json', function(data) { 
+    articulos = data.articulosBicicleta;
+    generarProductos(articulos, "#container_accesorios");
+  });
+}
 
 function generarProductos(lista, donde) {
   // lista - array de objetos con la informacion de los productos
